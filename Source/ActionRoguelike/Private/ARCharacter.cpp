@@ -2,7 +2,6 @@
 
 
 #include "ARCharacter.h"
-#include "ARCharacter.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 
@@ -14,6 +13,7 @@ AARCharacter::AARCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>("SpringArmComp");
+	SpringArmComponent->bUsePawnControlRotation = true;
 	SpringArmComponent->SetupAttachment(RootComponent);
 	
 	CameraComp = CreateDefaultSubobject<UCameraComponent>("CameraComp");
@@ -47,7 +47,9 @@ void AARCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &AARCharacter::MoveForward);
+	//PlayerInputComponent->BindAxis("MoveRight", this, &AARCharacter::MoveRight);
 
 	PlayerInputComponent->BindAxis("Turn", this, &APawn:: AddControllerYawInput);
+	PlayerInputComponent->BindAxis("Lookup", this, &APawn::AddControllerYawInput);
 }
 
