@@ -4,6 +4,9 @@
 #include "ARCharacter.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
+#include "DrawDebugHelpers.h"
+#include "GameFramework/CharacterMovementComponent.h"
+
 
 
 // Sets default values
@@ -15,9 +18,14 @@ AARCharacter::AARCharacter()
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>("SpringArmComp");
 	SpringArmComponent->bUsePawnControlRotation = true;
 	SpringArmComponent->SetupAttachment(RootComponent);
+
+	SpringArmComponent->SetUsingAbsoluteRotation(true);
 	
 	CameraComp = CreateDefaultSubobject<UCameraComponent>("CameraComp");
 	CameraComp->SetupAttachment(SpringArmComponent);
+
+	GetCharacterMovement()->bOrientRotationToMovement = true;
+	bUseControllerRotationYaw = false;
 
 }
 
@@ -30,9 +38,24 @@ void AARCharacter::BeginPlay()
 
 void AARCharacter::MoveForward(float value)
 {
-	AddMovementInput(GetActorForwardVector(), value);
+	FRotator ControlRot = GetControlRotation();
+	ControlRot.Pitch = 0.0f;
+	ControlRot.Roll = 0.0f;
+
+	AddMovementInput(ControlRot.Vector(), value);
 }
 
+void AARCharacter::MoveRight(float value)
+{
+	FRotator ControlRot = GetControlRotation();
+	ControlRot.Pitch = 0.0f;
+	ControlRot.Roll = 0.0f;
+	
+
+	FVector RightVector = FRotationMatrix(ControlRot).GetScaledAxis(EAxis::Y);
+	
+	AddMovementInput(RightVector, value);
+}
 
 // Called every frame
 void AARCharacter::Tick(float DeltaTime)
@@ -47,9 +70,9 @@ void AARCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &AARCharacter::MoveForward);
-	//PlayerInputComponent->BindAxis("MoveRight", this, &AARCharacter::MoveRight);
+	PlayerInputComponent->BindAxis("MoveRight", this, &AARCharacter::MoveRight);
 
 	PlayerInputComponent->BindAxis("Turn", this, &APawn:: AddControllerYawInput);
-	PlayerInputComponent->BindAxis("Lookup", this, &APawn::AddControllerYawInput);
+	PlayerInputComponent->BindAxis("Lookup", this, &APawn::AddControllerPitchInput);
 }
 

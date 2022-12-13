@@ -30,6 +30,8 @@ protected:
 	virtual void BeginPlay() override;
 
 	void MoveForward(float value);
+
+	void MoveRight(float value);
 	
 
 public:
