@@ -7,7 +7,7 @@
 #include "ARMagicProjectile.generated.h"
 
 UCLASS()
-class AARMagicProjectile : public AActor
+class ACTIONROGUELIKE_API AARMagicProjectile : public AActor
 {
 	GENERATED_BODY()
 	
