@@ -16,6 +16,18 @@ public:
 	ARMagicProjectile();
 
 protected:
+	
+
+	UPROPERTY(VisibleAnywhere)
+	USphereComponent* SphereComp;
+
+	UPROPERTY(VisibleAnywhere)
+	UProjectileMovementComponent* MovementComp;
+
+	UPROPERTY(VisibleAnywhere)
+	UParticleSystemComponent* EffectComp;
+
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
