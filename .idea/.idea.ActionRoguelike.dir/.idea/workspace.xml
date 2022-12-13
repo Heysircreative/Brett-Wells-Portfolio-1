@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="064c43f7-cb6e-42c7-9e97-6053ee9aacb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/Private/ARMagicProjectile.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/Private/ARMagicProjectile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/Public/ARMagicProjectile.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670910450168</updated>
-      <workItem from="1670910452948" duration="3885000" />
+      <workItem from="1670910452948" duration="4509000" />
     </task>
     <servers />
   </component>
