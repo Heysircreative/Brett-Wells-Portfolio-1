@@ -6,6 +6,10 @@
 #include "GameFramework/Actor.h"
 #include "RMagicProjectile.generated.h"
 
+class USphereComponent;
+class UProjectileMovementComponent;
+class UParticleSystemComponent;
+
 UCLASS()
 class ACTIONROGUELIKE_API ARMagicProjectile : public AActor
 {
@@ -31,6 +35,13 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	void MoveForward(float Value);
+	void MoveRight(float Value);
+
+	void PrimaryAttack();
+
+
+	
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

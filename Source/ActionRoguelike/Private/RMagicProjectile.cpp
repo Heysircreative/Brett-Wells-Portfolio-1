@@ -6,6 +6,7 @@
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Particles/ParticleSystemComponent.h"
 
+
 // Sets default values
 ARMagicProjectile::ARMagicProjectile()
 {
