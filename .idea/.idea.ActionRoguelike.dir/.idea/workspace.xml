@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="064c43f7-cb6e-42c7-9e97-6053ee9aacb9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/Private/RMagicProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/Private/RMagicProjectile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/Public/RMagicProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/Public/RMagicProjectile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,21 +22,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\heysi\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\heysi\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\heysi\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\heysi\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\heysi\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\heysi\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ActionRoguelike" type="Uproject" factoryName="rider.uproject">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/ActionRoguelike.uproject" />
@@ -105,6 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670910450168</updated>
       <workItem from="1670910452948" duration="6406000" />
+      <workItem from="1671082802312" duration="344000" />
     </task>
     <servers />
   </component>
