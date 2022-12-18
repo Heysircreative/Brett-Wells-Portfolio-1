@@ -3,12 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "ARInteractionComponent.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "ARCharacter.generated.h"
 
 class UCameraComponent;
 class USpringArmComponent;
+class UARInteractionComponent;
 
 UCLASS()
 class ACTIONROGUELIKE_API AARCharacter : public ACharacter
@@ -30,6 +32,10 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere)
 	UCameraComponent* CameraComp;
+
+	UPROPERTY(VisibleAnywhere)
+	UARInteractionComponent* InteractionComp;
+	
 	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -45,6 +51,8 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	void PrimaryAttack();
+
+	void PrimaryInteract();
 
 	
 	// Called to bind functionality to input
