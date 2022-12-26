@@ -11,6 +11,7 @@
 class UCameraComponent;
 class USpringArmComponent;
 class UARInteractionComponent;
+class UAnimMontage;
 
 UCLASS()
 class ACTIONROGUELIKE_API AARCharacter : public ACharacter
@@ -19,8 +20,16 @@ class ACTIONROGUELIKE_API AARCharacter : public ACharacter
 
 protected:
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category= "Attack")
 	TSubclassOf<AActor> ProjectileClass;
+
+	UPROPERTY(EditAnywhere, Category= "Attack")
+	UAnimMontage* AttackAnim;
+
+	//UPROPERTY(EditAnywhere, Category= "Attack")
+	FTimerHandle TimerHandle_PrimaryAttack;
+
+	
 
 public:
 	// Sets default values for this character's properties
@@ -51,6 +60,8 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	void PrimaryAttack();
+
+	void PrimaryAttack_TimeElapsed();
 
 	void PrimaryInteract();
 

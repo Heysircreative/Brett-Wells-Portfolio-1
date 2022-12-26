@@ -4,14 +4,7 @@
     <projectFile>ActionRoguelike.uproject</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="064c43f7-cb6e-42c7-9e97-6053ee9aacb9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ActionRoguelike.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ActionRoguelike/Maps/TestLevel/6/8C/8FGJWO5SNDNFPSO6JEMKLQ.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ActionRoguelike/Maps/TestLevel/6/8C/8FGJWO5SNDNFPSO6JEMKLQ.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/ActionRoguelike/Maps/TestLevel/B/M8/6T0VE6F6V0IB2MR30YBHML.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/ActionRoguelike/Maps/TestLevel/B/M8/6T0VE6F6V0IB2MR30YBHML.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/Private/ARCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/Private/ARCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ActionRoguelike/Public/ARCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ActionRoguelike/Public/ARCharacter.h" afterDir="false" />
-    </list>
+    <list default="true" id="064c43f7-cb6e-42c7-9e97-6053ee9aacb9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +104,7 @@
       <updated>1670910450168</updated>
       <workItem from="1670910452948" duration="6406000" />
       <workItem from="1671082802312" duration="3833000" />
-      <workItem from="1671326451092" duration="11705000" />
+      <workItem from="1671326451092" duration="11818000" />
     </task>
     <servers />
   </component>
