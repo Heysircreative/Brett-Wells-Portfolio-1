@@ -23,10 +23,10 @@ public:
 protected:
 	// Called when the game starts or when spawned
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UStaticMeshComponent* MeshComp;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	URadialForceComponent* ForceComp;
 	
 	virtual void PostInitializeComponents() override;
