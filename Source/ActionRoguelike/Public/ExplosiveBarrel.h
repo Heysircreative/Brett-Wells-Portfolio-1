@@ -20,7 +20,7 @@ public:
 	
 	
 
-protected:
+protected: 
 	// Called when the game starts or when spawned
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
